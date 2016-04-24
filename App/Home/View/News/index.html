@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <include file="Public/header" title="公司动态-华创信息科技公司"/>
+    </head>
+    <body>
+		<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <include file="Public/nav" />
+		<div class="section">
+			<div class="container">
+				<div class="col-sm-8 latest-news">
+					<h2>公司动态</h2>
+					<volist name="list" id="val">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="caption">
+								<a href="{:U('Home/News/news/theme/'.$val['id'])}">{$val['title']}</a>
+								<div class="date">{$val['time']} </div>
+							</div>
+							<div class="intro"> <a href="{:U('Home/News/news/theme/'.$val['id'])}">查看更多</a></div>
+						</div>
+					</div>
+					</volist>
+					<ul class="pagination no-margin pull-right">
+						{$page}
+					</ul>
+				</div>
+				<div class="col-sm-4 blog-sidebar" style="padding-top:12px">
+					<h4>联系我们</h4>
+					<ul class="blog-categories">
+						<li>电话:13828384812</li>
+						<li>微信:</li>
+						<li>邮箱:HCIT@gmail.com </li>
+						<li>地址:肇庆市端州区肇庆学院中巴软件楼</li>
+					</ul>
+				</div>
+				<!-- End Sidebar -->
+			</div>
+	    </div>
+		<include file="Public/footer" />
+		<script>
+			$('#news').addClass("active").siblings().removeClass("active");
+		</script>
+	</body>
+</html>
