@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
-class AdminController extends Controller {
+use Admin\Controller\ComController;
+class AdminController extends ComController {
     public function index(){
 		$Admin = M('Admin');
 		$count = $Admin->count(); // 查询满足要求的总记录数

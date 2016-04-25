@@ -1,13 +1,8 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
-class IndexController extends Controller {
+use Admin\Controller\ComController;
+class IndexController extends ComController {
     public function index(){
-		if(cookie('account')||session('account')){
-			$this->display();
-		}else{
-			$this->redirect('Login/index');
-		}
+		$this->display();
     }
-	
 }

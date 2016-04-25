@@ -24,6 +24,10 @@ class LoginController extends Controller {
 		} else {
 			$this->error('账号不存在');
 		}
-		
+	}
+	public function quit(){
+		session(null);
+		cookie(null);
+		$this->redirect('index');
 	}
 }

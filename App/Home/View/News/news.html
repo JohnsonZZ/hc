@@ -25,6 +25,24 @@
 					{$content}
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-sm-5 col-sm-offset-1 blog-sidebar" style="padding-top:12px">
+					<h4>最新发布</h4>
+					<ul class="blog-categories">
+						<volist name="news" id="val">
+						<li><a href="{:U('Home/News/news/theme/'.$val['id'])}">{$val['title']}</a></li>
+						</volist>
+					</ul>
+				</div>
+				<div class="col-sm-5 blog-sidebar" style="padding-top:12px">
+					<h4>可能喜欢</h4>
+					<ul class="blog-categories">
+						<volist name="like" id="val">
+						<li><a href="{:U('Home/News/news/theme/'.$val['id'])}">{$val['title']}</a></li>
+						</volist>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<include file="Public/footer" />
 		<script>

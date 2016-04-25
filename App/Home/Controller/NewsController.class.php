@@ -19,6 +19,10 @@ class NewsController extends Controller {
 		$data['id'] = I('get.theme');
 		$List = M('List');
 		$list = $List->where($data)->find();
+		$news = $List->order('id desc')->limit(4)->select();
+		$like = $List->order('rand()')->limit(4)->select();
+		$this->assign('news',$news);
+		$this->assign('like',$like);
 		$this->assign($list);
 		$this->display();
 	}

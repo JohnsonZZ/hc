@@ -479,14 +479,14 @@ a:hover {
 }
 .featured-news .caption a,
 .latest-news .caption a {
-  font-size: 1.1em;
+  font-size: 1.15em;
   font-weight: 600;
   color: #535b60;
 }
 .featured-news .intro,
 .latest-news .intro {
   padding-bottom: 10px;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 .featured-news .intro a,
 .latest-news .intro a {
@@ -494,7 +494,7 @@ a:hover {
 }
 .featured-news .date,
 .latest-news .date {
-  font-size: 0.7em;
+  font-size: 0.9em;
   color: #999;
   float:right;
 }

@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
-class UserController extends Controller {
+use Admin\Controller\ComController;
+class UserController extends ComController {
     public function index(){
 			$User = M('User');
 			$count = $User->count(); // 查询满足要求的总记录数
