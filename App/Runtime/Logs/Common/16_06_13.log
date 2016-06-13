@@ -1,0 +1,18 @@
+[ 2016-06-13T10:03:11+08:00 ] 127.0.0.1 /hc/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+ERR: 无法加载模块:Admin
+
+[ 2016-06-13T10:03:20+08:00 ] 127.0.0.1 /hc/Xdmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+ERR: 无法加载模块:Xdmin
+
+[ 2016-06-13T10:17:59+08:00 ] 127.0.0.1 /hc/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+ERR: 无法加载模块:Admin
+
